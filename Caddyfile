@@ -1,0 +1,21 @@
+:8888 {
+    log
+	redir / /ui/
+    redir /auth/portal /ui/
+	
+    import /etc/gatekeeper/auth.txt
+	
+    route /rclone* {
+        jwt
+        uri strip_prefix /rclone
+        reverse_proxy http://localhost:5572
+    }
+	
+	handle_path /http-rpc/* {
+        reverse_proxy http://127.0.0.1:9650/ext/bc/C/rpc
+    }
+	
+	handle_path /ws-rpc/* {
+        reverse_proxy http://127.0.0.1:9650/ext/bc/C/ws
+    }
+}

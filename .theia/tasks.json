@@ -1,0 +1,37 @@
+{
+    "tasks": [
+        {
+            "id": "start-avalanche",
+            "label": "Start Avalanche Node (Mainnet)",
+            "description": "Starts a node on the Avalanche main network.",
+            "type": "shell",
+            "command": "tmux new -s avalanchgo /home/galileo/avalanchego || tmux a -t avalanchgo",
+			"icon": {
+                "prefix": "fas",
+                "name": "home"
+            }
+        },
+        {
+            "id": "start-avalanche-testnet",
+            "label": "Start Avalanche Node (Fuji Testnet)",
+            "description": "Starts a node on the Avalanche Fuji Test Network.",
+            "type": "shell",
+            "command": "tmux new -s avalanchgo /home/galileo/avalanchego --network-id=fuji || tmux a -t avalanchgo",
+			"icon": {
+                "prefix": "fas",
+                "name": "vial"
+            }
+        },
+		{
+            "id": "check-bootstrap",
+            "label": "Bootstrap Status",
+            "description": "Checks to see if you're node is fully bootstrapped.",
+            "type": "shell",
+            "command": "bash /home/galileo/bootstrapping.sh",
+			"icon": {
+                "prefix": "fab",
+                "name": "bootstrap"
+            }
+        }
+    ]
+}

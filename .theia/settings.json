@@ -1,0 +1,80 @@
+{
+    "galileo.logo": "https://cryptologos.cc/logos/avalanche-avax-logo.png?v=014",
+    "galileo.title": "Avalanche",
+    "galileo.description": "Digitize All The World’s Assets.",
+    "galileo.widget_label": "Avalanche Portal",
+    "galileo.social_links": [
+        {
+        "icon": {
+            "prefix": "fab",
+            "name": "twitter"
+        },
+        "href": "https://twitter.com/avalancheavax",
+        "priority": 0
+        },
+        {
+        "icon": {
+            "prefix": "fab",
+            "name": "github"
+        },
+        "href": "https://github.com/ava-labs",
+        "priority": 1
+        }
+    ],
+    "galileo.ui_components": [
+        {
+        "type": "custom",
+        "title": "Avalanche Resources",
+        "content": [
+            {
+            "title": "🌎 Avalanche Home Page",
+            "href": "https://www.avax.network/",
+            "priority": 0
+            },
+            {
+            "title": "📙 Developer Resources",
+            "href": "https://docs.avax.network/",
+            "priority": 1
+            },
+            {
+            "title": "🛸 Avalanche Node Guide",
+            "href": "https://docs.avax.network/build/tutorials/nodes-and-staking/run-avalanche-node",
+            "priority": 2
+            }
+        ]
+        },
+		{
+        "type": "custom",
+        "title": "Solidity Language",
+        "content": [
+			{
+			"title": "🤓 Solidity Documentation",
+			"href": "https://docs.soliditylang.org/en/v0.8.5/",
+			"priority": 0
+			},
+			{
+			"title": "👷‍♂️ Hardhat Environment",
+			"href": "https://hardhat.org/",
+			"priority": 1
+			},
+			{
+			"title": "🍄 Truffle Environment",
+			"href": "https://www.trufflesuite.com/", 
+			"priority": 2
+			}
+        ]
+        },
+		{
+        "type": "custom",
+        "title": "Your API Endpoints",
+        "content": [
+			{
+			"title": "🔱 HTTP JSON-RPC",
+			"href": "/http/",
+			"priority": 0
+			}
+        ]
+        }
+    ],
+    "workbench.colorTheme": "Galileo Light"
+}
