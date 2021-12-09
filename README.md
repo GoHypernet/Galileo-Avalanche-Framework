@@ -2,7 +2,7 @@
   <img src="https://cryptologos.cc/logos/avalanche-avax-logo.png?v=014" width="100">
 </p>
 
-# GETH
+# Avalanche
 
 ## Overview
 - **Industry**: Cryptocurrency, Avalanche
