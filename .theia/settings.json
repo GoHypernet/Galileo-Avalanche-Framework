@@ -70,7 +70,7 @@
         "content": [
 			{
 			"title": "🔱 HTTP JSON-RPC",
-			"href": "/http/",
+			"href": "/http/ext/bc/C/rpc",
 			"priority": 0
 			}
         ]
