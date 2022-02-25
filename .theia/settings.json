@@ -40,6 +40,11 @@
             "title": "🛸 Avalanche Node Guide",
             "href": "https://docs.avax.network/build/tutorials/nodes-and-staking/run-avalanche-node",
             "priority": 2
+            },
+			{
+            "title": "⛽ Avalanche Gas Tracker",
+            "href": "https://snowtrace.io/gastracker",
+            "priority": 3
             }
         ]
         },

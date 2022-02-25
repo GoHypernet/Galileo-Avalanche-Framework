@@ -6,8 +6,8 @@ FROM hypernetlabs/galileo-ide:linux AS galileo-ide
 
 WORKDIR /
 # get the Avalanche Binaries
-ADD --chown=galileo https://github.com/ava-labs/avalanchego/releases/download/v1.7.2/avalanchego-linux-amd64-v1.7.2.tar.gz .
-RUN tar -xvf avalanchego-linux-amd64-v1.7.2.tar.gz
+ADD --chown=galileo https://github.com/ava-labs/avalanchego/releases/download/v1.7.5/avalanchego-linux-amd64-v1.7.5.tar.gz .
+RUN tar -xvf avalanchego-linux-amd64-v1.7.5.tar.gz
 
 # Final build stage
 FROM ubuntu:18.04 
@@ -57,7 +57,7 @@ COPY --chown=galileo Caddyfile /etc/
 COPY --from=galileo-ide --chown=galileo /.galileo-ide /home/galileo/.galileo-ide
 
 # get the AVAX binaries
-COPY --from=galileo-ide --chown=galileo /avalanchego-v1.7.2 /home/galileo
+COPY --from=galileo-ide --chown=galileo /avalanchego-v1.7.5 /home/galileo
 COPY --chown=galileo bootstrapping.sh /home/galileo/bootstrapping.sh
 
 USER galileo
